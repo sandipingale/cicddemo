@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install virtualenv
         python -m virtualenv projectenv
-        source projectenv/bin/activate
+        
         which python
     - name: Install dependencies
       run: | 
