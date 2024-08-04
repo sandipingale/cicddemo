@@ -37,8 +37,5 @@ jobs:
     - name: Test with pytest
       run: |
         python firstproject.py
-    - name: Build and publish a Docker image for ${{ github.repository }}
-      uses: macbre/push-to-ghcr@master
-      with:
-        image_name: ${{ github.repository }}  # it will be lowercased internally
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Build and Push Container to ghcr.io
+      uses: GlueOps/github-actions-build-push-containers@v0.3.7
