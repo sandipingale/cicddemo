@@ -16,4 +16,4 @@ RUN python -m venv venv && \
 COPY . .
 
 # Activate the virtual environment and run the script
-CMD ["/bin/bash", "-c", ". venv/bin/activate && python firstproject.py"]
+CMD [". venv/bin/activate && python firstproject.py"]
